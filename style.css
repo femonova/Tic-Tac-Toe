@@ -1,0 +1,67 @@
+
+* {
+    padding: 0;
+  }
+  .board {
+    height: 600px;
+    width: 600px;
+    background-color: #1e2126;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 5px solid black; /*Why wouldnt padding work for box?*/
+    border-radius: 10px;
+  }
+  
+  .box {
+    font-size: 90px;
+    font-family: sans-serif;
+    color: #f7ff14;
+    border: 5px solid black;
+    border-radius: 3px;
+    padding: 30px;
+    /*We need both for these?*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .game {
+    background-color: #0d1828;
+    border: 5px solid #0d1828;
+    border-radius: 10px;
+    height: 710px;
+    width: 610px;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 30px;
+  }
+  
+  #overlay {
+    position: absolute;
+    height: 710px;
+    width: 610px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    text-align: center;
+  }
+  
+  #overlay p {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-top: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #overlay button {
+    text-align: center;
+    color: white;
+    height: 40px;
+    width: 100px;
+  }
